@@ -1,0 +1,7 @@
+# fibSeq
+
+JavaScript to return an integer in the Fibonacci-Sequence in n-th position. Assumes that the first integer is 1, and thus the first two are [1,1]; Also assumes that only positive integers are used.
+
+
+
+
