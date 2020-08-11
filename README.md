@@ -43,9 +43,9 @@ Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
 
 ##### Complexity Analysis of Approach 1
 
-Time complexity : `O(N)O(N)`. Each value from `2` to `N` will be visited at least once. The time it takes to do this is directly proportionate to `N` where `N` is the Fibonacci Number we are looking to compute.
+Time complexity : `O(N)`. Each value from `2` to `N` will be visited at least once. The time it takes to do this is directly proportionate to `N` where `N` is the Fibonacci Number we are looking to compute.
 
-Space complexity : `O(1)O(1)`. This requires 1 unit of Space for the integer `N` and 3 units of Space to store the computed values (`result`, `first` and `second`) for every loop iteration. The amount of Space doesn't change so this is constant Space complexity.
+Space complexity : `O(1)`. This requires 1 unit of Space for the integer `N` and 3 units of Space to store the computed values (`result`, `first` and `second`) for every loop iteration. The amount of Space doesn't change so this is constant Space complexity.
 
 #### Approach 2
 
@@ -53,6 +53,6 @@ Space complexity : `O(1)O(1)`. This requires 1 unit of Space for the integer `N`
 
 ##### Complexity Analysis of Approach 2
 
-Time complexity : `O(2^N)O(2N)`. This is the slowest way to solve the `Fibonacci Sequence` because it takes exponential time. The amount of operations needed, for each level of recursion, grows exponentially as the depth approaches `N`.
+Time complexity : `O(2^N)`. This is the slowest way to solve the `Fibonacci Sequence` because it takes exponential time. The amount of operations needed, for each level of recursion, grows exponentially as the depth approaches `N`.
 
-Space complexity : `O(N)O(N)`. We need space proportionate to `N` to account for the max size of the stack, in memory. This stack keeps track of the function calls to `fib(N)`. This has the potential to be bad in cases that there isn't enough physical memory to handle the increasingly growing stack, leading to a `StackOverflowError`.
+Space complexity : `O(N)`. We need space proportionate to `N` to account for the max size of the stack, in memory. This stack keeps track of the function calls to `fib(N)`. This has the potential to be bad in cases that there isn't enough physical memory to handle the increasingly growing stack, leading to a `StackOverflowError`.
