@@ -1,10 +1,8 @@
 // Iterative Top-Down Approach
 const fib = function(n) {
-    
-    if(n < 1) {
+    if(n < 2) {
         return n;
     }
-    
     let first = 0,
         second = 1,
         result;
